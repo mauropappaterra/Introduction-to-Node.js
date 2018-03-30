@@ -5,6 +5,7 @@
 
 // Import all necessary modules
 const fs = require('fs');  // file system module
+const path = require('path') // path module
 const readline = require('readline'); // read line module
 
 const csv2json = (file = 'customer-data') => {
@@ -39,15 +40,13 @@ const csv2json = (file = 'customer-data') => {
         }
 
         counter ++;
-    })
+    });
 
     lineReader.on('close',() => {
-        fs.writeFile(file + '.json', JSON.stringify(all_customers,null,' '), (error) => {
-            if (error)
-                return process.exit(1)
-    });
-        console.log("CSV file converted to .JSON successfully")
+        fs.writeFile(file + '.json', JSON.stringify(all_customers,null,' ')
+    );
+        console.log("The CSV file was converted to .JSON!")
     })
-}
+};
 
 csv2json(process.argv[2]);
