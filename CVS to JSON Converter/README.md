@@ -9,5 +9,5 @@ In order to solve this task I used the library readline that reads an external f
 
 I run my project locally and I used console.log() calls to print the contents of variables. I also used debugging tools from my IDE (WebStorm).<br><br>
 
-<i>3. Let us know if anything doesn't work as intended so your reviewer will know ahead of time</i><br>
+<i>3. Let us know if anything doesn't work as intended so your reviewer will know ahead of time</i><br><br>
 I get the following error message '(node:7596) [DEP0013] DeprecationWarning: Calling an asynchronous function without callback is deprecated.' but the file is converted successfully!<br><br>
