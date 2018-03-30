@@ -6,7 +6,7 @@
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => {
+app.get('/', (req, res) => { // Endpoint
     res.send('hello world')
 })
 
